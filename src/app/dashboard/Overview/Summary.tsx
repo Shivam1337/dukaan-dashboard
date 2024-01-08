@@ -1,5 +1,5 @@
 import Image from "next/image";
-import arrowDownIcon from "./arrow-down.svg";
+import arrowDownIcon from "./images/arrow-down.svg";
 
 export default function Summary() {
   return (
@@ -16,7 +16,7 @@ export default function Summary() {
           />
         </button>
       </div>
-      <div className="flex gap-5">
+      <div className="flex flex-col sm:flex-row gap-5">
         <div className="w-full bg-white py-4 px-5 rounded-lg shadow:0px_2px_6px_0px_rgba(26,_24,_30,_0.04)] flex flex-col gap-4">
           <div className="text-base">Online orders</div>
           <span className="text-count font-medium">231</span>

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import searchIcon from "./search.svg";
-import sortIcon from "./sort.svg";
-import downloadIcon from "./download.svg";
+import searchIcon from "./images/search.svg";
+import sortIcon from "./images/sort.svg";
+import downloadIcon from "./images/download.svg";
 import Link from "next/link";
-import arrowDownIcon from "./arrow-down.svg";
-import exclamationIcon from "./exclamation.svg";
-import triangleIcon from "./triangle.svg";
+import arrowDownIcon from "./images/arrow-down.svg";
+import exclamationIcon from "./images/exclamation.svg";
+import triangleIcon from "./images/triangle.svg";
 
 export default function Transactions() {
   return (
@@ -15,20 +15,20 @@ export default function Transactions() {
       </h2>
       <div className="bg-white rounded shadow:0px_2px_6px_0px_rgba(26,_24,_30,_0.04)] px-3 pt-3 pb-6">
         <div className="flex items-center justify-between mb-3">
-          <div className="flex bg-white gap-2 border rounded border-[#D9D9D9] px-4 py-[10px] w-fit">
+          <div className="flex bg-white gap-2 border rounded border-[#D9D9D9] px-4 py-[10px]">
             <Image src={searchIcon} height={14} width={14} alt="Search icon" />
             <input
               type="text"
               placeholder="Search by order ID..."
-              className="outline-none w-[194px]"
+              className="outline-none"
             />
           </div>
           <div className="flex items-center gap-3">
-            <button className="flex items-center hover:bg-slate-100 bg-white gap-[6px] border rounded border-[#D9D9D9] px-3 py-[6px] w-fit">
+            <button className="flex items-center min-w-4 hover:bg-slate-100 bg-white gap-[6px] border rounded border-[#D9D9D9] px-3 py-[6px] w-fit">
               <span>Sort</span>
               <Image src={sortIcon} height={16} width={16} alt="Sort icon" />
             </button>
-            <button className="flex items-center hover:bg-slate-100 bg-white gap-2 border rounded border-[#D9D9D9] p-2 w-fit">
+            <button className="flex items-center min-w-5 hover:bg-slate-100 bg-white gap-2 border rounded border-[#D9D9D9] p-2 w-fit">
               <Image
                 src={downloadIcon}
                 height={20}
@@ -120,22 +120,22 @@ export default function Transactions() {
               <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 12
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 13
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 14
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 15
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 16
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 17
               </span>
-              <span className="py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
+              <span className="hidden sm:block py-[6px] px-2 rounded hover:bg-slate-100 cursor-pointer">
                 18
               </span>
             </div>

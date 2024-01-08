@@ -20,7 +20,7 @@ export default function HoverMenu() {
         />
       </button>
       <div
-        className={`absolute top-0 left-0 right-0 bottom-0 bg-black/80 flex items-start ${
+        className={`absolute top-0 left-0 right-0 bottom-0 h-screen bg-black/80 flex items-start ${
           isOpen ? "w-screen" : "w-0 overflow-hidden"
         } transition-all duration-500`}
         onClick={() => setIsOpen(false)}
@@ -32,6 +32,14 @@ export default function HoverMenu() {
         >
           <Sidebar />
         </div>
+        
+        <Image
+          src={closeIcon}
+          height={120}
+          width={120}
+          className="max-w-6 m-4"
+          alt="Close icon"
+        />
       </div>
     </>
   );

@@ -15,7 +15,7 @@ export default function Transactions() {
       </h2>
       <div className="bg-white rounded shadow:0px_2px_6px_0px_rgba(26,_24,_30,_0.04)] px-3 pt-3 pb-6">
         <div className="flex items-center justify-between mb-3">
-          <div className="flex bg-white gap-2 border rounded border-[#D9D9D9] px-4 py-[10px]">
+          <div className="flex bg-white gap-2 border rounded border-[#D9D9D9] px-4 py-[10px] w-1/3 overflow-hidden sm:w-auto">
             <Image src={searchIcon} height={14} width={14} alt="Search icon" />
             <input
               type="text"
@@ -40,9 +40,9 @@ export default function Transactions() {
         </div>
 
         <div className="mb-6 text-[#4D4D4D]">
-          <div className="bg-[#F2F2F2] w-full px-3 py-[10px] rounded gap-10 flex items-center justify-between">
-            <div className="flex flex-1 text-sm font-medium">Order Id</div>
-            <div className="flex flex-1 text-sm font-medium gap-1">
+          <div className="bg-[#F2F2F2] text-xs sm:text-sm w-full px-3 py-[10px] rounded gap-10 flex items-center justify-between">
+            <div className="flex flex-1 font-medium">Order Id</div>
+            <div className="flex flex-1 font-medium gap-1">
               <span>Order Date</span>
               <Image
                 src={triangleIcon}
@@ -51,10 +51,10 @@ export default function Transactions() {
                 alt="Triangle icon"
               />
             </div>
-            <div className="flex flex-1 justify-end text-sm font-medium">
+            <div className="flex flex-1 justify-end font-medium">
               Order amount
             </div>
-            <div className="flex flex-1 justify-end text-sm font-medium gap-1">
+            <div className="flex flex-1 justify-end font-medium gap-1">
               <span>Transaction fees</span>
               <Image
                 src={exclamationIcon}

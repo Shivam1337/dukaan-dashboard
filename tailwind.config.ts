@@ -8,11 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        screen: [
+          "100vh", // fallback for IR and Opera
+          "100dvh", // supported dynamic height
+        ],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       fontSize: {
         regular: ["15px", "22px"],
         subBodyRegular: ["13px", "16px"],

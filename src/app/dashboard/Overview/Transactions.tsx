@@ -75,7 +75,7 @@ export default function Transactions() {
               .map((item, index) => (
                 <div
                   key={item.orderId + index}
-                  className="px-3 py-[14px] rounded gap-10 flex items-center justify-between"
+                  className="px-3 py-[14px] rounded gap-10 flex items-center justify-between border-b"
                 >
                   <Link
                     href={"#"}

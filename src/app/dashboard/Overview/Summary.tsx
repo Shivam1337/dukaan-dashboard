@@ -17,11 +17,11 @@ export default function Summary() {
         </button>
       </div>
       <div className="flex flex-col sm:flex-row gap-5">
-        <div className="w-full bg-white py-4 px-5 rounded-lg shadow:0px_2px_6px_0px_rgba(26,_24,_30,_0.04)] flex flex-col gap-4">
+        <div className="w-full bg-white py-4 px-5 rounded-lg shadow-[0px_2px_6px_0px_#1A181E04] flex flex-col gap-4">
           <div className="text-base">Online orders</div>
           <span className="text-count font-medium">231</span>
         </div>
-        <div className="w-full bg-white py-4 px-5 rounded-lg shadow:0px_2px_6px_0px_rgba(26,_24,_30,_0.04)] flex flex-col gap-4">
+        <div className="w-full bg-white py-4 px-5 rounded-lg shadow-[0px_2px_6px_0px_#1A181E04] flex flex-col gap-4">
           <div className="text-base">Amount received</div>
           <span className="text-count font-medium">₹23,92,312.19</span>
         </div>
